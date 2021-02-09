@@ -4,6 +4,9 @@
 // output: ['is', 'a', 'split', 'sentence.', 'This']
 
 function rearranger(arr) {
+    arr.shift()
+    arr.push("This", 4)
+    return arr
 }
 
 
@@ -16,6 +19,8 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
+    return(Math.max(...arr))
+   
 }
 
 
@@ -28,7 +33,13 @@ function largestNum(arr) {
 // output: [16, 8, 4, 28]
 
 function elemsTimesLength(arr) {
+    let newArray = []
+    for (let i = 0; i < arr.length; i++) {
+        newArray.push(arr[i]*arr.length) 
+    } 
+    return newArray
 }
+
 
 
 // ------------------------------------------
@@ -63,10 +74,15 @@ let flights = [{
 
 function flightCost(destination, firstClass) {
     //***hint: use the find method***
-
+    debugger;
+    for (let i = 0; i < flights.length; i++) {
+        flights.find(flights.prices)
+        
+    
+    
 }
 
-
+    }
 // ------------------------------------------
 
 
@@ -84,6 +100,9 @@ let staff = [{ id: 1, name: 'Jon' }, { id: 2, name: 'Yuli' }, { id: 21, name: 'P
 { id: 881, name: 'Paul' }, { id: 0, name: 'Jon' }, { id: 999, name: 'Timma' }]
 
 function findById(id) {
+
+
+
 
 }
 
@@ -111,4 +130,6 @@ let theBand = {
 }
 
 function bandMemberDetails(name) {
+
 }
+

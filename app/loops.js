@@ -6,6 +6,12 @@
 // 1*2*3*4 = 24
 
 function factorials(num) {
+    while(num>1){
+        num--
+        let result = result * num
+    }
+    return result
+
 
 }
 
@@ -17,7 +23,6 @@ function factorials(num) {
 // output: 20
 
 function rangeTotal(n1, n2) {
-
 }
 
 // ------------------------------------------
